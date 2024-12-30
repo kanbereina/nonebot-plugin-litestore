@@ -38,7 +38,7 @@ _✨ 新一代的轻量化 NoneBot 本地数据存储插件 ✨_
 - [x] **更加清晰**的插件数据路径创建
 
 
-## 使用方式
+## 🔧 使用方式
 
 加载插件后使用 `require` 声明插件依赖，直接使用 `nonebot_plugin_litestore` 插件提供的类即可。
 
@@ -57,6 +57,26 @@ plugin_config_file: Path = Store.Config.get_file("filename")
 plugin_data_dir: Path = Store.Data.get_dir()
 plugin_data_file: Path = Store.Data.get_file("filename")
 ```
+
+## 💡 存储路径
+
+对于一个[**规范的NoneBot2项目**](https://nonebot.dev/docs/next/quick-start)，本插件会在您的插件调用函数时，自动**在项目目录**中创建插件数据路径。
+
+比如：
+
+**项目目录：YourBot**（包含`.env`文件）
+
+则对应的路径为：**`./YourBot/__plugin_data__`**
+
+---
+
+假设你有一个叫 **`example_plugin`** 的插件调用了 **`Store.Data.get_dir()`**,则对应创建路径为：**`./YourBot/__plugin_data__/example_plugin/data`**
+
+同理，本插件一共会创建以下路径：
+
+**`./YourBot/__plugin_data__/example_plugin/data`**<br>
+**`./YourBot/__plugin_data__/example_plugin/cache`**<br>
+**`./YourBot/__plugin_data__/example_plugin/config`**<br>
 
 ## 💿 安装
 
