@@ -28,7 +28,30 @@ _✨ 新一代的轻量化 NoneBot 本地数据存储插件 ✨_
 
 ## 📖 介绍
 
-这里是插件的详细介绍部分
+为了更加方便管理插件数据，开箱即用，本插件提供了与 [**NoneBot Plugin LocalStore**](https://github.com/nonebot/plugin-localstore) 不同的功能
+- [x] **无需配置，开箱即用**
+- [x] 自动在**NoneBot2规范机器人项目内**创建插件数据主文件夹
+- [x] **更加清晰**的插件数据路径创建
+
+## 使用方式
+
+加载插件后使用 `require` 声明插件依赖，直接使用 `nonebot_plugin_litestore` 插件提供的类即可。
+
+```python
+from pathlib import Path
+from nonebot import require
+
+require("nonebot_plugin_litestore")
+
+from nonebot_plugin_localstore import PluginStore as Store
+
+plugin_cache_dir: Path = Store.Cache.get_dir()
+plugin_cache_file: Path = Store.Cache.get_file("filename")
+plugin_config_dir: Path = Store.Config.get_dir()
+plugin_config_file: Path = Store.Config.get_file("filename")
+plugin_data_dir: Path = Store.Data.get_dir()
+plugin_data_file: Path = Store.Data.get_file("filename")
+```
 
 ## 💿 安装
 
@@ -70,21 +93,3 @@ _✨ 新一代的轻量化 NoneBot 本地数据存储插件 ✨_
     plugins = ["nonebit_plugin_litestore"]
 
 </details>
-
-## ⚙️ 配置
-
-在 nonebot2 项目的`.env`文件中添加下表中的必填配置
-
-| 配置项 | 必填 | 默认值 | 说明 |
-|:-----:|:----:|:----:|:----:|
-| 配置项1 | 是 | 无 | 配置说明 |
-| 配置项2 | 否 | 无 | 配置说明 |
-
-## 🎉 使用
-### 指令表
-| 指令 | 权限 | 需要@ | 范围 | 说明 |
-|:-----:|:----:|:----:|:----:|:----:|
-| 指令1 | 主人 | 否 | 私聊 | 指令说明 |
-| 指令2 | 群员 | 是 | 群聊 | 指令说明 |
-### 效果图
-如果有效果图的话
