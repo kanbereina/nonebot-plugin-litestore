@@ -28,10 +28,15 @@ _✨ 新一代的轻量化 NoneBot 本地数据存储插件 ✨_
 
 ## 📖 介绍
 
-为了更加方便管理插件数据，开箱即用，本插件提供了与 [**NoneBot Plugin LocalStore**](https://github.com/nonebot/plugin-localstore) 不同的功能
+为了**更加方便**管理插件数据，**开箱即用**，
+
+本插件提供了与 [**NoneBot Plugin LocalStore**](https://github.com/nonebot/plugin-localstore) 不同的功能：
+
+
 - [x] **无需配置，开箱即用**
 - [x] 自动在**NoneBot2规范机器人项目内**创建插件数据主文件夹
 - [x] **更加清晰**的插件数据路径创建
+
 
 ## 使用方式
 
