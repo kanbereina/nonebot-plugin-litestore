@@ -14,8 +14,8 @@ _✨ 新一代的轻量化 NoneBot 本地数据存储插件 ✨_
 <a href="./LICENSE">
     <img src="https://img.shields.io/github/license/kanbereina/nonebot-plugin-litestore.svg" alt="license">
 </a>
-<a href="https://pypi.python.org/pypi/nonebit-plugin-litestore">
-    <img src="https://img.shields.io/pypi/v/nonebit-plugin-litestore.svg" alt="pypi">
+<a href="https://pypi.python.org/pypi/nonebot-plugin-litestore">
+    <img src="https://img.shields.io/pypi/v/nonebot-plugin-litestore.svg" alt="pypi">
 </a>
 <img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="python">
 
