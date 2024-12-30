@@ -21,6 +21,9 @@ _✨ 新一代的轻量化 NoneBot 本地数据存储插件 ✨_
 
 </div>
 
+> [!CAUTION]\
+> **警告，本插件不是NoneBot2规范，商店插件请统一使用 LocalStore**
+
 > [!IMPORTANT]
 > 感谢 [**NoneBot Plugin LocalStore**](https://github.com/nonebot/plugin-localstore)（Worked by [**yanyongyu**](https://github.com/yanyongyu)）！
 > 
