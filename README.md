@@ -51,7 +51,7 @@ from nonebot import require
 
 require("nonebot_plugin_litestore")
 
-from nonebot_plugin_localstore import PluginStore as Store
+from nonebot_plugin_litestore import PluginStore as Store
 
 plugin_cache_dir: Path = Store.Cache.get_dir()
 plugin_cache_file: Path = Store.Cache.get_file("filename")
