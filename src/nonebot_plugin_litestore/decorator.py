@@ -1,3 +1,4 @@
+import functools
 from pathlib import Path
 from typing import Callable
 
@@ -16,6 +17,7 @@ def _ensure_dir(path: Path) -> None:
 
 def auto_create_dir(func: Callable[P, Path]) -> Callable[P, Path]:
     """一个装饰器, 用于自动创建路径"""
+    @functools.wraps(func)
     def wrapper(*args: P.args, **kwargs: P.kwargs) -> Path:
         path = func(*args, **kwargs)
         _ensure_dir(path)

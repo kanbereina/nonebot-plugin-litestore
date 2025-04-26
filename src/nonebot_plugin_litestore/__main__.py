@@ -56,9 +56,9 @@ class PluginData(Store):
 
 
 class PluginStore:
-    Cache = PluginCache
-    Config = PluginConfig
-    Data = PluginData
+    cache = PluginCache
+    config = PluginConfig
+    data = PluginData
 
 
 __all__ = ["PluginStore"]

@@ -9,12 +9,12 @@ __plugin_meta__ = PluginMetadata(
     usage=(
         '声明依赖: `require("nonebot_plugin_litestore")`\n'
         "导入所需文件夹:\n"
-        "  `cache_dir = PluginStore.Cache.get_dir()`\n"
-        '  `cache_file = PluginStore.Cache.get_file("file_name")`\n'
-        "  `data_dir = PluginStore.Data.get_dir()`\n"
-        '  `data_file = PluginStore.Data.get_file("file_name")`\n'
-        "  `config_dir = PluginStore.Config.get_dir()`\n"
-        '  `config_file = PluginStore.Config.get_file("file_name")`'
+        "  `cache_dir = PluginStore.cache.get_dir()`\n"
+        '  `cache_file = PluginStore.cache.get_file("file_name")`\n'
+        "  `data_dir = PluginStore.data.get_dir()`\n"
+        '  `data_file = PluginStore.data.get_file("file_name")`\n'
+        "  `config_dir = PluginStore.config.get_dir()`\n"
+        '  `config_file = PluginStore.config.get_file("file_name")`'
     ),
     type="library",
     homepage="https://github.com/kanbereina/nonebot-plugin-litestore",
