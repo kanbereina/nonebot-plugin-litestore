@@ -1,13 +1,11 @@
 from pathlib import Path
 
-from nonebot.config import ENV_FILE_SENTINEL
-
 from .decorator import auto_create_dir
 from .model import Store
 from .utils import try_get_caller_plugin, get_plugin_path
 
 
-BASE_DIR = ENV_FILE_SENTINEL.parent.cwd()/"__plugin_data__"
+BASE_DIR = Path().cwd()/"__plugin_data__"
 
 
 class PluginCache(Store):
