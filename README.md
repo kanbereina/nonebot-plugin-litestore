@@ -86,14 +86,6 @@ plugin_data_file: Path = Store.data.get_file("filename")
 
 ## 💿 安装
 
-<details open>
-<summary>使用 nb-cli 安装</summary>
-在 nonebot2 项目的根目录下打开命令行, 输入以下指令即可安装
-
-    nb plugin install nonebit-plugin-litestore
-
-</details>
-
 <details>
 <summary>使用包管理器安装</summary>
 在 nonebot2 项目的插件目录下, 打开命令行, 根据你使用的包管理器, 输入相应的安装命令
